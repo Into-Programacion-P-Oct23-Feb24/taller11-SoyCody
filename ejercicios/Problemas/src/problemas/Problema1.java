@@ -29,8 +29,8 @@ public class Problema1 {
                 }
                 cadena = String.format("%s", cadena);
             }
-            System.out.println(cadena);
         }
+        System.out.println(cadena);
     }
 
 }

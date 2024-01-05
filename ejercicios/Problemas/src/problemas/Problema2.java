@@ -5,6 +5,7 @@
  */
 package problemas;
 import java.util.Scanner;
+import java.util.Locale;
 /**
  *
  * @author reroes
@@ -33,6 +34,7 @@ public class Problema2 {
     }
     public static void obtenerCuadrado(){
         Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
         double area;
         double lado;
         System.out.println("Ingrese el tamaño del cuadrado");
@@ -40,5 +42,30 @@ public class Problema2 {
         area = lado * lado * lado * lado;
         System.out.println("El area es: " + area);
     }
-    
+    public static void obtenerTriangulo(){
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        double area;
+        double base;
+        double altura;
+        System.out.println("Ingrese la base del triangulo");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese su altura");
+        altura = entrada.nextDouble();
+        area = (base * altura)/2;
+        System.out.println("El area es: " + area);
+    }
+    public static void obtenerRectangulo(){
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        double base;
+        double altura;
+        double area;
+        System.out.println("Ingrese la base del rectangulo");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese su altura");
+        altura = entrada.nextDouble();
+        area = base * altura;
+        System.out.println("El area es: " + area);
+    }
 }
